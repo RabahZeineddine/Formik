@@ -1,8 +1,28 @@
 {
   "name": "material-ui-formik-fields",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Formik Fields using Material ui",
+  "author": "Rabah Zeineddine",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "formik",
+    "material-ui"
+  ],
+  "version": "0.0.0-development",
+  "main": "lib/src/index.js",
+  "private": false,
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RabahZeineddine/material-ui-formik-fields.git"
+  },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -10,6 +30,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "formik": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
@@ -17,10 +38,17 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "start-storybook -p 9009 -s public",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build-storybook": "build-storybook -s public",
+    "lint": "eslint './src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
+    "clean": "rm -rf ./lib",
+    "prebuild": "yarn clean",
+    "build": "tsc --build \"./tsconfig.json\"",
+    "copy-files": "copyfiles -u 1 src/style/base.css lib/",
+    "postbuild": "yarn run copy-files",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +67,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-knobs": "^6.1.20",
+    "@storybook/addon-links": "^6.1.20",
+    "@storybook/node-logger": "^6.1.20",
+    "@storybook/preset-create-react-app": "^3.1.6",
+    "@storybook/react": "^6.1.20",
+    "copyfiles": "^2.4.1",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "storybook-readme": "^5.0.9",
+    "semantic-release": "^17.3.9"
   }
 }
