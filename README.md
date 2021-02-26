@@ -41,6 +41,6 @@ import {TextField} from 'material-ui-formik-fields'
 
 ## Demos of the package in action
 
-Check the [Storybook page](http://RabahZeineddine.github.io/material-ui-formik-fields)
+Check the [Storybook page](https://rabahzeineddine.github.io/material-ui-formik-fields/)
 
 <!-- ## Instructions for contributors -->
