@@ -1,5 +1,9 @@
 language: node_js
 
+branches:
+  only:
+    - main
+
 node_js:
   - lts/*
   - 12
@@ -8,10 +12,9 @@ jobs:
   include:
     # Define the release stage that runs semantic-release
     - stage: release
-      if: branch = main
       node_js: lts/*
       # Advanced: optionally overwrite your default `script` step to skip the tests
-      # script: skip
+      script: skip
       deploy:
         provider: script
         skip_cleanup: false
