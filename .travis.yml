@@ -3,6 +3,7 @@ language: node_js
 branches:
   only:
     - main
+    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
 
 node_js:
   - lts/*
