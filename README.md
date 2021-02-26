@@ -39,6 +39,8 @@ import {TextField} from 'material-ui-formik-fields'
 
 > For more information check the [TextField Documentation](src/components/TextField/README.md)
 
-<!-- ## Demos of the package in action -->
+## Demos of the package in action
+
+Check the [Storybook page](http://RabahZeineddine.github.io/material-ui-formik-fields)
 
 <!-- ## Instructions for contributors -->
