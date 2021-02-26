@@ -6,7 +6,7 @@
       "dom"
     ],
     "outDir": "lib",
-    "jsx": "react-jsx",
+    "jsx": "react",
     "module": "esnext",
     "declaration": true,
     "declarationMap": true,

@@ -14,9 +14,9 @@ const Template: Story<TextFieldProps> = (args) => (
   </Formik>
 );
 
-export const Primary = Template.bind({});
+export const Default = Template.bind({});
 
-Primary.args = {
+Default.args = {
   id: 'email',
   name: 'email',
   label: 'Email',

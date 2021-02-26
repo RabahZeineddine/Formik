@@ -25,3 +25,5 @@ yarn-error.log*
 /lib
 
 *.lock
+
+/storybook-static
