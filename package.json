@@ -8,7 +8,7 @@
     "formik",
     "material-ui"
   ],
-  "version": "0.2.6",
+  "version": "0.2.7",
   "main": "lib/src/index.js",
   "private": false,
   "directories": {
@@ -80,6 +80,7 @@
     "@storybook/react": "^6.1.20",
     "@storybook/storybook-deployer": "^2.8.7",
     "copyfiles": "^2.4.1",
+    "cz-conventional-changelog": "3.3.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -88,5 +89,10 @@
     "semantic-release": "^17.3.9",
     "storybook-readme": "^5.0.9"
   },
-  "homepage": "http://RabahZeineddine.github.io/material-ui-formik-fields"
+  "homepage": "http://RabahZeineddine.github.io/material-ui-formik-fields",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
