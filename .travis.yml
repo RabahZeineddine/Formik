@@ -1,10 +1,5 @@
 language: node_js
 
-branches:
-  only:
-    - main
-    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
-
 node_js:
   - lts/*
   - 12
@@ -17,6 +12,8 @@ jobs:
       # Advanced: optionally overwrite your default `script` step to skip the tests
       script: skip
       deploy:
+        on:
+          branch: main
         provider: script
         skip_cleanup: false
         script:
