@@ -5,7 +5,7 @@ export type TextFieldProps = {
   placeholder?: string;
   className?: string;
   type?: string;
-  margin?: 'none' | 'dense' | 'normal' | undefined;
+  margin?: 'none' | 'dense' | 'normal';
   fullWidth?: boolean;
   required?: boolean;
 };
