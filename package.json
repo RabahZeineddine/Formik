@@ -9,10 +9,10 @@
     "material-ui"
   ],
   "version": "0.3.15",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "private": false,
   "files": [
-    "dist/**/*"
+    "lib"
   ],
   "repository": {
     "type": "git",
