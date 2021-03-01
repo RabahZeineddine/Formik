@@ -6,19 +6,17 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/npm",
     [
-      "@semantic-release/exec",
+      "@semantic-release/npm",
       {
-        "prepare": "npx rjp package.json version nextRelease.version"
+        "npmPublish": false
       }
     ],
     [
       "@semantic-release/git",
       {
-        "message": "Release <%= nextRelease.version %> [skip ci]",
+        "message": "Release changelog",
         "assets": [
-          "package.json",
           "CHANGELOG.md"
         ]
       }

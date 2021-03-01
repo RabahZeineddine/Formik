@@ -40,13 +40,15 @@
     "test": "echo No test found!",
     "lint": "eslint './src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
-    "clean": "rm -rf ./dist",
+    "clean": "rm -rf ./lib",
     "prebuild": "npm run clean",
     "build": "tsc --build \"./tsconfig.json\"",
     "semantic-release": "semantic-release",
     "predeploy-storybook": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy": "npm run build && npm run copy-files:deploy && npm publish material-ui-material-field",
+    "copy-files:deploy": "copyfiles package.json README.md LICENSE lib"
   },
   "eslintConfig": {
     "extends": [
