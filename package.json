@@ -45,7 +45,7 @@
     "clean": "rm -rf ./lib",
     "prebuild": "yarn clean",
     "build": "tsc --build \"./tsconfig.json\"",
-    "copy-files": "copyfiles -u 1 src/style/base.css lib/",
+    "copy-files": "copyfiles package.json README.md lib/",
     "postbuild": "yarn run copy-files",
     "semantic-release": "semantic-release",
     "predeploy-storybook": "npm run build-storybook",
