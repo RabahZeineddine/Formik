@@ -2,13 +2,13 @@
   "name": "material-ui-formik-fields",
   "description": "Formik Fields using Material ui",
   "author": "Rabah Zeineddine",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "keywords": [
     "react",
     "formik",
     "material-ui"
   ],
-  "version": "0.3.4",
+  "version": "0.3.6",
   "main": "lib/src/index.js",
   "private": false,
   "directories": {
