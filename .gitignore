@@ -27,3 +27,5 @@ yarn-error.log*
 *.lock
 
 /storybook-static
+
+package-lock.json
