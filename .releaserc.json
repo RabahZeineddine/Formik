@@ -9,13 +9,13 @@
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "lib"
+        "pkgRoot": "."
       }
     ],
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "npx rjp package.json version nextRelease.version"
+        "prepare": "npx rjp package.json version nextRelease.version"
       }
     ],
     [

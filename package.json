@@ -8,14 +8,11 @@
     "formik",
     "material-ui"
   ],
-  "version": "0.3.12",
-  "main": "lib/index.js",
+  "version": "0.3.13",
+  "main": "dist/index.js",
   "private": false,
-  "directories": {
-    "lib": "lib"
-  },
   "files": [
-    "lib"
+    "dist/**/*"
   ],
   "repository": {
     "type": "git",
@@ -43,11 +40,9 @@
     "test": "echo No test found!",
     "lint": "eslint './src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
-    "clean": "rm -rf ./lib",
-    "prebuild": "yarn clean",
+    "clean": "rm -rf ./dist",
+    "prebuild": "npm run clean",
     "build": "tsc --build \"./tsconfig.json\"",
-    "copy-files": "copyfiles package.json README.md lib/",
-    "postversion": "cp -r package.json lib/",
     "semantic-release": "semantic-release",
     "predeploy-storybook": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
