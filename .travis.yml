@@ -18,6 +18,6 @@ jobs:
         on:
           branch: main
         provider: script
-        skip_cleanup: false
+        cleanup: true
         script:
           - npx semantic-release
