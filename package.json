@@ -8,11 +8,11 @@
     "formik",
     "material-ui"
   ],
-  "version": "0.3.18",
+  "version": "0.3.19",
   "main": "index.js",
   "private": false,
   "files": [
-    "lib"
+    "*"
   ],
   "repository": {
     "type": "git",
@@ -47,7 +47,7 @@
     "predeploy-storybook": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook",
-    "deploy": "npx semantic-release && npm run build && npm run copy-files:deploy && cd lib && npm publish material-ui-formik-fields",
+    "deploy": "npx semantic-release && npm run build && npm run copy-files:deploy && cd lib && npm publish",
     "copy-files:deploy": "copyfiles package.json README.md LICENSE lib"
   },
   "eslintConfig": {
