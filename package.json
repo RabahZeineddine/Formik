@@ -47,7 +47,7 @@
     "predeploy-storybook": "npm run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook",
-    "deploy": "npx semantic-release && npm run build && npm run copy-files:deploy && cd lib && npm publish material-ui-material-fields",
+    "deploy": "npx semantic-release && npm run build && npm run copy-files:deploy && cd lib && npm publish material-ui-formik-fields",
     "copy-files:deploy": "copyfiles package.json README.md LICENSE lib"
   },
   "eslintConfig": {
