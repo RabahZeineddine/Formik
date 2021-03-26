@@ -21,7 +21,7 @@ It manages Formik's methods on every input.
 #### TextField
 
 ```TSX
-import {TextField} from 'material-ui-formik-fields'
+import {TextField} from '@rabahzeineddine/Formik'
 
 <Formik
     initialValues={{}}

@@ -3,9 +3,6 @@ language: node_js
 node_js:
   - 12
 
-cache:
-  npm: false
-
 jobs:
   include:
     # Define the release stage that runs semantic-release
@@ -18,5 +15,6 @@ jobs:
           branch: main
         provider: script
         cleanup: true
+        skip_cleanup: true
         script:
-          - npx -p @semantic-release/exec -p @semantic-release/changelog -p @semantic-release/git -p semantic-release semantic-release -y
+          - yarn run semantic-release

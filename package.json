@@ -1,5 +1,5 @@
 {
-  "name": "material-ui-formik-fields",
+  "name": "@rabahzeineddine/formik",
   "description": "Formik Fields using Material ui",
   "author": "Rabah Zeineddine",
   "license": "Apache-2.0",
@@ -8,7 +8,7 @@
     "formik",
     "material-ui"
   ],
-  "version": "0.3.19",
+  "version": "1.0.0",
   "main": "index.js",
   "private": false,
   "files": [
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/RabahZeineddine/material-ui-formik-fields.git"
+    "url": "https://github.com/RabahZeineddine/Formik.git"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -36,19 +36,22 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "start-storybook -p 9009 -s public",
+    "start": "start-storybook -p 6006 -s public",
     "test": "echo No test found!",
     "lint": "eslint './src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
-    "clean": "rm -rf ./lib",
-    "prebuild": "npm run clean",
+    "clean:storybook": "rm -rf ./storybook-static",
+    "prebuild": "yarn run clean && yarn install",
     "build": "tsc --build \"./tsconfig.json\"",
-    "semantic-release": "semantic-release",
-    "predeploy-storybook": "npm run build-storybook",
+    "postbuild": "yarn run copy:build",
+    "copy:build": "copyfiles package.json README.md LICENSE ./lib",
+    "predeploy-storybook": "yarn run clean:storybook && yarn run build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook",
-    "deploy": "npx semantic-release && npm run build && npm run copy-files:deploy && cd lib && npm publish",
-    "copy-files:deploy": "copyfiles package.json README.md LICENSE lib"
+    "storybook": "start-storybook -p 6006 -s public",
+    "copy-files": "",
+    "semantic-release": "yarn run build && semantic-release",
+    "clean": "rm -rf ./lib && rm -rf ./node_modules && rm -rf ./storybook-static && rm -rf ./yarn.lock"
   },
   "eslintConfig": {
     "extends": [
@@ -90,7 +93,7 @@
     "semantic-release": "^17.4.0",
     "storybook-readme": "^5.0.9"
   },
-  "homepage": "http://RabahZeineddine.github.io/material-ui-formik-fields",
+  "homepage": "http://RabahZeineddine.github.io/Formik",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

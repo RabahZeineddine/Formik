@@ -2,25 +2,17 @@
   "branches": [
     "main"
   ],
-  "repositoryUrl": "https://github.com/RabahZeineddine/material-ui-formik-fields.git",
+  "repositoryUrl": "https://github.com/RabahZeineddine/Formik.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
     [
       "@semantic-release/npm",
       {
-        "npmPublish": false
+        "pkgRoot": "lib"
       }
     ],
-    [
-      "@semantic-release/git",
-      {
-        "message": "Release changelog",
-        "assets": [
-          "CHANGELOG.md"
-        ]
-      }
-    ],
-    "@semantic-release/changelog"
+    "@semantic-release/github"
   ]
 }
