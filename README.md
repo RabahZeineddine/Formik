@@ -1,4 +1,4 @@
-# Material-ui Formik Fields
+# Material-ui Formik components
 
 This project offers [Material-ui](https://material-ui.com/) input fields that works with [Formik](https://formik.org/)
 
@@ -21,7 +21,7 @@ It manages Formik's methods on every input.
 #### TextField
 
 ```TSX
-import {TextField} from '@rabahzeineddine/Formik'
+import { TextField } from '@rabahzeineddine/Formik'
 
 <Formik
     initialValues={{}}
