@@ -58,6 +58,27 @@ import { RadioGroup, Radio } from '@rabahzeineddine/formik'
 
 > For more information check the [RadioGroup Documentation](src/components/RadioGroup/README.md)
 
+#### Select
+
+```TSX
+import { Select, Option } from '@rabahzeineddine/formik'
+
+<Formik
+    initialValues={{}}
+    onSubmit={() => {}}
+    >
+    <Form>
+        <Select>
+            <Option value="">Select an option</Option>
+            <Option value="option1">Option 1</Option>
+            <Option value="option2">Option 2</Option>
+        </Select>
+    </Form>
+</Formik>
+```
+
+> For more information check the [Select Documentation](src/components/Select/README.md)
+
 ## Demos of the package in action
 
 Check the [Storybook page](https://rabahzeineddine.github.io/Formik)
