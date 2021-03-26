@@ -9,14 +9,13 @@ Material-ui TextField component that works using Formik's methods
 ##### Import
 
 ```TS
-import { TextField } from 'material-ui-formik-fields';
+import { TextField } from '@rabahzeineddine/formik';
 ```
 
 ##### Usage example
 
 ```TSX
 <TextField
-    id="email"
     name="email"
     label="Email"
     fullWidth={true}
@@ -25,16 +24,15 @@ import { TextField } from 'material-ui-formik-fields';
 
 ##### Required props
 
-| Name   | Type     | Description |
-| ------ | -------- | ----------- |
-| `id`   | `string` |             |
-| `name` | `string` |             |
+| Name    | Type     | Description |
+| ------- | -------- | ----------- |
+| `name`  | `string` |             |
+| `label` | `string` |             |
 
 ##### Optional props
 
 | Name          | Type                      | Default | Description |
 | ------------- | ------------------------- | ------- | ----------- |
-| `label`       | `string`                  |         |             |
 | `placeholder` | `string`                  |         |             |
 | `className`   | `string`                  |         |             |
 | `type`        | `string`                  |         |             |

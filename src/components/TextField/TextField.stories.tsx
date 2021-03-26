@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { Story } from '@storybook/react';
-import { Form, Formik } from 'formik';
-import TextField from './index';
+import { Story } from "@storybook/react";
+import { Form, Formik } from "formik";
+import TextField from "./index";
 
-import { TextFieldProps } from '../../config/@types/TextField';
+import { TextFieldProps } from "../../config/@types/TextField";
 
 const Template: Story<TextFieldProps> = (args) => (
   <Formik initialValues={{}} onSubmit={() => {}}>
@@ -17,12 +17,11 @@ const Template: Story<TextFieldProps> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  id: 'email',
-  name: 'email',
-  label: 'Email',
+  name: "email",
+  label: "Email",
 };
 
 export default {
   component: TextField,
-  title: 'TextField',
+  title: "TextField",
 };
