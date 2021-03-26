@@ -21,7 +21,7 @@ It manages Formik's methods on every input.
 #### TextField
 
 ```TSX
-import { TextField } from '@rabahzeineddine/Formik'
+import { TextField } from '@rabahzeineddine/formik'
 
 <Formik
     initialValues={{}}
@@ -29,7 +29,6 @@ import { TextField } from '@rabahzeineddine/Formik'
     >
     <Form>
         <TextField
-            id="email"
             name="email"
             label="Email"
         />
@@ -37,10 +36,30 @@ import { TextField } from '@rabahzeineddine/Formik'
 </Formik>
 ```
 
-> For more information check the [TextField Documentation](src/components/TextField/README.md)
+> For more information check the [TextField Documentation](src/components/TextField/README.md)  
+
+#### RadioGroup
+
+```TSX
+import { RadioGroup, Radio } from '@rabahzeineddine/formik'
+
+<Formik
+    initialValues={{}}
+    onSubmit={() => {}}
+    >
+    <Form>
+        <RadioGroup name="sex">
+            <Radio value="male" label="Male" />
+            <Radio value="female" label="Female" />
+        </RadioGroup>
+    </Form>
+</Formik>
+```
+
+> For more information check the [RadioGroup Documentation](src/components/RadioGroup/README.md)
 
 ## Demos of the package in action
 
-Check the [Storybook page](https://rabahzeineddine.github.io/material-ui-formik-fields/)
+Check the [Storybook page](https://rabahzeineddine.github.io/Formik)
 
 <!-- ## Instructions for contributors -->

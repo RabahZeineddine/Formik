@@ -29,7 +29,7 @@ It manages Formik's methods on every input.
 #### TextField
 
 ```TSX
-import {TextField} from 'material-ui-formik-fields'
+import { TextField } from '@rabahzeineddine/formik'
 
 <Formik
     initialValues={{}}
@@ -45,4 +45,28 @@ import {TextField} from 'material-ui-formik-fields'
 </Formik>
 ```
 
-> For more information check the [TextField Documentation](src/components/TextField.stories.tsx?path=/docs/textfield--default)
+> For more information check the [TextField Documentation](?path=/docs/textfield--default)
+
+#### RadioGroup
+
+```TSX
+import { RadioGroup, Radio } from '@rabahzeineddine/formik'
+
+<Formik
+    initialValues={{}}
+    onSubmit={() => {}}
+    >
+    <Form>
+        <RadioGroup name="sex">
+            <Radio value="male" label="Male" />
+            <Radio value="female" label="Female" />
+        </RadioGroup>
+    </Form>
+</Formik>
+```
+
+> For more information check the [RadioGroup Documentation](?path=/docs/radiogroup--default)
+
+## Github repository
+
+Check the [Github repository](https://github.com/RabahZeineddine/Formik.git)
