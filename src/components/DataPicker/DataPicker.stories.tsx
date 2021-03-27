@@ -4,9 +4,9 @@ import { Story } from "@storybook/react";
 import { Form, Formik } from "formik";
 import DataPicker from "./index";
 
-import { FormikFieldProps } from "../../config/@types/Formik";
+import { DatePickerProps } from "../../config/@types/DataPicker";
 
-const Template: Story<FormikFieldProps> = (args) => (
+const Template: Story<DatePickerProps> = (args) => (
   <Formik initialValues={{}} onSubmit={() => {}}>
     <Form>
       <DataPicker {...args} />

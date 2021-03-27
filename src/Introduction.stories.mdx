@@ -67,6 +67,44 @@ import { RadioGroup, Radio } from '@rabahzeineddine/formik'
 
 > For more information check the [RadioGroup Documentation](?path=/docs/radiogroup--default)
 
+#### Select
+
+```TSX
+import { Select, Option } from '@rabahzeineddine/formik'
+
+<Formik
+    initialValues={{}}
+    onSubmit={() => {}}
+    >
+    <Form>
+        <Select name="options" label="Options">
+            <Option value="">Select an option</Option>
+            <Option value="option1">Option 1</Option>
+            <Option value="option2">Option 2</Option>
+        </Select>
+    </Form>
+</Formik>
+```
+
+> For more information check the [Select Documentation](?path=/docs/select--default)
+
+#### DataPicker
+
+```TSX
+import { DataPicker } from '@rabahzeineddine/formik'
+
+<Formik
+    initialValues={{}}
+    onSubmit={() => {}}
+    >
+    <Form>
+        <DataPicker name="date" label="Date" />
+    </Form>
+</Formik>
+```
+
+> For more information check the [DataPicker Documentation](?path=/docs/datapicker--default)
+
 ## Github repository
 
 Check the [Github repository](https://github.com/RabahZeineddine/Formik.git)

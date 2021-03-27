@@ -15,7 +15,7 @@ import { Select, Option } from '@rabahzeineddine/formik';
 ##### Usage example
 
 ```TSX
-<Select>
+<Select name="options" label="Options">
     <Option value="">Select an option</Option>
     <Option value="option1">Option 1</Option>
     <Option value="option2">Option 2</Option>
@@ -41,10 +41,28 @@ import { Select, Option } from '@rabahzeineddine/formik';
 | `fullWidth` | `boolean`         |         |             |
 | `disabled`  | `boolean`         |         |             |
 
-### Option Props
+### Option and CheckOption Props
 
 ##### Required props
 
 | Name    | Type     | Description |
 | ------- | -------- | ----------- |
 | `value` | `string` |             |
+
+### Checkbox Option
+
+##### Import
+
+```TS
+import { Select, CheckOption } from '@rabahzeineddine/formik';
+```
+
+##### Usage example
+
+```TSX
+<Select name="options" label="Options">
+    <CheckOption value="">Select an option</CheckOption>
+    <CheckOption value="option1">Option 1</CheckOption>
+    <CheckOption value="option2">Option 2</CheckOption>
+</Select>
+```

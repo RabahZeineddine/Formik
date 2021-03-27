@@ -9,11 +9,11 @@ import {
 import style from "./style";
 import { makeStyles } from "@material-ui/core";
 import { useField, useFormikContext } from "formik";
-import { FormikFieldProps } from "../../config/@types/Formik";
+import { DatePickerProps } from "../../config/@types/DataPicker";
 
 const useStyles = makeStyles(style);
 
-export default function DatePicker(props: FormikFieldProps) {
+export default function DatePicker(props: DatePickerProps) {
   const classes = useStyles();
   const { fullWidth, ...rest } = props;
   const [field, meta] = useField({ ...props, type: "date" });

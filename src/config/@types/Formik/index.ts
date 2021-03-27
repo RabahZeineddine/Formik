@@ -1,7 +1,7 @@
 
 export type FormikFieldProps = {
     name: string
-    label?: string
+    label: string
     placeholder?: string
     className?: string
     type?: string

@@ -68,7 +68,7 @@ import { Select, Option } from '@rabahzeineddine/formik'
     onSubmit={() => {}}
     >
     <Form>
-        <Select>
+        <Select name="options" label="Options">
             <Option value="">Select an option</Option>
             <Option value="option1">Option 1</Option>
             <Option value="option2">Option 2</Option>
@@ -78,6 +78,23 @@ import { Select, Option } from '@rabahzeineddine/formik'
 ```
 
 > For more information check the [Select Documentation](src/components/Select/README.md)
+
+#### DataPicker
+
+```TSX
+import { DataPicker } from '@rabahzeineddine/formik'
+
+<Formik
+    initialValues={{}}
+    onSubmit={() => {}}
+    >
+    <Form>
+        <DataPicker name="date" label="Date" />
+    </Form>
+</Formik>
+```
+
+> For more information check the [DataPicker Documentation](src/components/DataPicker/README.md)
 
 ## Demos of the package in action
 
