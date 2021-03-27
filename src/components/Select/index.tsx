@@ -33,7 +33,7 @@ function Select(props: FormikSelectProps) {
         }),
       }}
     >
-      <InputLabel id={`label_${props.id}`} style={{ padding: 0 }}>
+      <InputLabel id={`label_${props.name}`} style={{ padding: 0 }}>
         {props.label}
       </InputLabel>
       <MuiSelect
@@ -43,7 +43,7 @@ function Select(props: FormikSelectProps) {
           }),
         }}
         multiple={multiple || false}
-        labelId={`label_${props.id}`}
+        labelId={`label_${props.name}`}
         disabled={disabled}
         {...field}
       >
