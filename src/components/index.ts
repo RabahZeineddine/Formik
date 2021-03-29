@@ -1,4 +1,5 @@
 export { default as TextField } from './TextField';
+export { default as MaskedTextField } from './MaskedTextField'
 export { default as Select } from './Select';
 export { default as Option } from './Select/Option';
 export { default as CheckOption } from './Select/CheckOption';
