@@ -47,6 +47,27 @@ import { TextField } from '@rabahzeineddine/formik'
 
 > For more information check the [TextField Documentation](?path=/docs/textfield--default)
 
+#### MaskedTextField
+
+```TSX
+import { MaskedTextField } from '@rabahzeineddine/formik'
+
+<Formik
+    initialValues={{}}
+    onSubmit={() => {}}
+    >
+    <Form>
+        <MaskedTextField
+            name="cellphone"
+            label="Cellphone"
+            mask=["(",/\d/,/\d/,")"," ",/\d/,/\d/,/\d/,/\d/,/\d/,"-",/\d/,/\d/,/\d/,/\d/]
+        >
+    </Form>
+</Formik>
+```
+
+> For more information check the [MaskedTextField Documentation](?path=/docs/maskedtextfield--cell-phone)
+
 #### RadioGroup
 
 ```TSX
