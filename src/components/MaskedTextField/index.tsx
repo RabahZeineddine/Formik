@@ -24,7 +24,7 @@ function MaskedTextField(props: MaskedTextFieldProps) {
   return (
     <TextField
       error={meta.touched && meta.error ? true : false}
-      helperText={meta.touched && meta.error ? meta.error : ""}
+      helperText={meta.touched && meta.error ? meta.error : " "}
       type="text"
       size="small"
       InputProps={{
