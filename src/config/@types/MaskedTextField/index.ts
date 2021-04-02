@@ -8,4 +8,5 @@ export type MaskedTextFieldProps = {
     margin?: 'none' | 'dense' | 'normal';
     fullWidth?: boolean;
     required?: boolean;
+    disabled?: boolean
 };

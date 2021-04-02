@@ -39,3 +39,4 @@ import { MaskedTextField } from '@rabahzeineddine/formik';
 | `margin`    | `none \| dense \| normal` |         |             |
 | `fullWidth` | `boolean`                 |         |             |
 | `required`  | `boolean`                 |         |             |
+| `disabled`  | `boolean`                 |         |             |
