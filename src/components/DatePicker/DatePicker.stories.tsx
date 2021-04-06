@@ -2,14 +2,14 @@ import React from "react";
 
 import { Story } from "@storybook/react";
 import { Form, Formik } from "formik";
-import DataPicker from "./index";
+import DatePicker from "./index";
 
-import { DatePickerProps } from "../../config/@types/DataPicker";
+import { DatePickerProps } from "../../config/@types/DatePicker";
 
 const Template: Story<DatePickerProps> = (args) => (
   <Formik initialValues={{}} onSubmit={() => {}}>
     <Form>
-      <DataPicker {...args} />
+      <DatePicker {...args} />
     </Form>
   </Formik>
 );
@@ -22,6 +22,6 @@ Default.args = {
 };
 
 export default {
-  component: DataPicker,
-  title: "DataPicker",
+  component: DatePicker,
+  title: "DatePicker",
 };

@@ -1,21 +1,21 @@
-# DataPicker
+# DatePicker
 
 <!-- STORY -->
 
 <hr>
 
-Material-ui DataPicker component that works using Formik's methods
+Material-ui DatePicker component that works using Formik's methods
 
 ##### Import
 
 ```TS
-import { DataPicker } from '@rabahzeineddine/formik';
+import { DatePicker } from '@rabahzeineddine/formik';
 ```
 
 ##### Usage example
 
 ```TSX
-    <DataPicker name="date" label="Date" />
+    <DatePicker name="date" label="Date" />
 ```
 
 ##### Required props

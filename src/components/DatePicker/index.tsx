@@ -9,7 +9,7 @@ import {
 import style from "./style";
 import { makeStyles } from "@material-ui/core";
 import { useField, useFormikContext } from "formik";
-import { DatePickerProps } from "../../config/@types/DataPicker";
+import { DatePickerProps } from "../../config/@types/DatePicker";
 
 const useStyles = makeStyles(style);
 

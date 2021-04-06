@@ -100,22 +100,22 @@ import { Select, Option } from '@rabahzeineddine/formik'
 
 > For more information check the [Select Documentation](src/components/Select/README.md)
 
-#### DataPicker
+#### DatePicker
 
 ```TSX
-import { DataPicker } from '@rabahzeineddine/formik'
+import { DatePicker } from '@rabahzeineddine/formik'
 
 <Formik
     initialValues={{}}
     onSubmit={() => {}}
     >
     <Form>
-        <DataPicker name="date" label="Date" />
+        <DatePicker name="date" label="Date" />
     </Form>
 </Formik>
 ```
 
-> For more information check the [DataPicker Documentation](src/components/DataPicker/README.md)
+> For more information check the [DatePicker Documentation](src/components/DatePicker/README.md)
 
 ## Demos of the package in action
 

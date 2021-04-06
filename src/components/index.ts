@@ -6,4 +6,4 @@ export { default as CheckOption } from './Select/CheckOption';
 export { default as ResetMultiSelectOptions } from './Select/ResetMultiSelectOptions';
 export { default as RadioGroup } from './RadioGroup'
 export { default as Radio } from './RadioGroup/Radio'
-export { default as DataPicker } from './DataPicker'
+export { default as DatePicker } from './DatePicker'
